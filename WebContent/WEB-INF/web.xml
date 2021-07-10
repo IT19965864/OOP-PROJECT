@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+         http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+      
+      <servlet>
+      	<servlet-name>login</servlet-name>
+      	<servlet-class>Servlets.Loginservlet</servlet-class>
+      </servlet>
+      <servlet-mapping>
+      		<servlet-name>login</servlet-name>
+      		<url-pattern>/log</url-pattern>
+      
+      </servlet-mapping>
+      
+       <servlet>
+      	<servlet-name>SellerRegservlet</servlet-name>
+      	<servlet-class>Servlets.SellerRegservlet</servlet-class>
+      </servlet>
+      <servlet-mapping>
+      		<servlet-name>SellerRegservlet</servlet-name>
+      		<url-pattern>/register</url-pattern>
+      
+      </servlet-mapping>
+      
+      <servlet>
+      	<servlet-name>view</servlet-name>
+      	<servlet-class>Servlets.PropertyServlet</servlet-class>
+      </servlet>
+      <servlet-mapping>
+      	<servlet-name>view</servlet-name>
+      	<url-pattern>/view</url-pattern>
+      </servlet-mapping>
+      
+      <servlet>
+      	<servlet-name>PropertyReserve</servlet-name>
+      	<servlet-class>Servlets.PropertyReserveServlet</servlet-class>
+      </servlet>
+      <servlet-mapping>
+		<servlet-name>PropertyReserve</servlet-name> 
+		<url-pattern>/reserve</url-pattern>     
+      </servlet-mapping>
+      
+      <servlet>
+      <servlet-name>PropertyPurchase</servlet-name>
+      	<servlet-class>Servlets.PropertyPurchaseServlet</servlet-class>
+      </servlet>
+      <servlet-mapping>
+		<servlet-name>PropertyPurchase</servlet-name> 
+		<url-pattern>/purchase</url-pattern> 
+	  </servlet-mapping>
+	  
+	  <servlet>
+      <servlet-name>PropertyDelete</servlet-name>
+      	<servlet-class>Servlets.PropertyDeleteServlet</servlet-class>
+      </servlet>
+      <servlet-mapping>
+		<servlet-name>PropertyDelete</servlet-name> 
+		<url-pattern>/delete</url-pattern> 
+	  </servlet-mapping>
+	  
+	  <servlet>
+      <servlet-name>PropertyDeletePermanent</servlet-name>
+      	<servlet-class>Servlets.DeletePropertyServlet</servlet-class>
+      </servlet>
+      <servlet-mapping>
+		<servlet-name>PropertyDeletePermanent</servlet-name> 
+		<url-pattern>/deletePermanent</url-pattern> 
+	  </servlet-mapping>
+	  
+	  <servlet>
+      <servlet-name>SoldReservedProperty</servlet-name>
+      	<servlet-class>Servlets.SoldReservedPropertyServlet</servlet-class>
+      </servlet>
+      <servlet-mapping>
+		<servlet-name>SoldReservedProperty</servlet-name> 
+		<url-pattern>/sold</url-pattern> 
+	  </servlet-mapping>
+	  
+      
+      
+         
+</web-app>         
