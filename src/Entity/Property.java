@@ -1,5 +1,7 @@
 package Entity;
 
+import com.mysql.jdbc.StringUtils;
+
 public class Property {
 	
 	private int propertyID;
